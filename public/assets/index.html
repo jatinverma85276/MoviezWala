@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/arrow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <nav class = "nav-menu">
+        <div class = "nav-container">
+            <a href = "#" class = "nav-brand"><img src="assets/logo.png" style="width: 18rem;"></a>
+            <!-- <button type = "button" id = "menu-show-btn">
+                <i class = "fas fa-bars"></i>
+            </button> -->
+            <div class="searchBox">
+
+              <input class="searchInput"type="text" name="" placeholder="Enter Movie Name">
+              <a class="searchButton" href="#">
+                  <i class="fa-solid fa-magnifying-glass material-icons"></i>
+                </a>
+            </div>
+            
+            <!-- <div class = "nav-overlay">
+                <div class = "nav-overlay-container">
+                  
+                </div>
+            </div> -->
+        </div>
+      </nav>
+    </header>
+    <section class="video">
+      <video autoplay loop muted style="width: 100%; height: 600px;">
+        <source src="assets/4k avatar.mp4" type="video/mp4">
+      </video>
+      <!-- <iframe width="1520" height="627" src="https://www.youtube.com/embed/qZVTkn2NjS0" title="Marvel Studios’ Secret Invasion | Official Trailer | Disney+" frameborder="0" allow=" autoplay; "></iframe> -->
+    </section>
+    <section class="main">
+      <div class="container">
+        <div class="headingArrow">
+          <p>Updated Movies</p>
+          <div id="container">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Explore All</span>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-container swap">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="backdrop.jpg" alt="">
+            </div>
+            <div class="swiper-slide imgMovie">
+              <a href="review_page.html"><img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt=""></a>
+              <div class="movieSomeDetail">
+                <h3>Movie Name</h3>
+                <h5>Duration: 2hr 15min</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/dueiWzWc81UAgnbDAyH4Gjqnh4n.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/hwNRc9ZWrakGdql22srY7DqtmRQ.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/hMh1mR2kNl8kHjpIuPh4TICTwjo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/c4EkF5JAZ83bUqNErhuSd9xw6uJ.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="">
+            </div>
+          </div>
+          <div class="arrow">
+              <div class="swiper-button-next" style="left: 92rem;"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+          <p>Recommended By MoviezWala</p>
+        <div class="swiper-container swap">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/dueiWzWc81UAgnbDAyH4Gjqnh4n.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/hwNRc9ZWrakGdql22srY7DqtmRQ.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/hMh1mR2kNl8kHjpIuPh4TICTwjo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/c4EkF5JAZ83bUqNErhuSd9xw6uJ.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="">
+            </div>
+          </div>
+          <div class="arrow">
+              <div class="swiper-button-next swapNext" style="left: 92rem;"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p>New Release</p>
+        <div class="swiper-container swap">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/ba7hnMx1HAze0QSJSNfsTBycS8U.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/c3XBgBLzB9Sh7k7ewXY2QpfH47L.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/b5rOkbQ0jKYvBqBf3bwJ6nXBOtx.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/aNsrgElf0fiKBSR8cWWEL6XUTte.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/dueiWzWc81UAgnbDAyH4Gjqnh4n.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/hwNRc9ZWrakGdql22srY7DqtmRQ.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/trAOGwksvgHYNpbK4GewbjYQ1pi.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/zAIippNnm6o0gYEtjapbjQSxP8G.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/tNyJxHK3m7NAAKNYITLJ5oxS0YR.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/hMh1mR2kNl8kHjpIuPh4TICTwjo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/c4EkF5JAZ83bUqNErhuSd9xw6uJ.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="">
+            </div>
+          </div>
+          <div class="arrow">
+              <div class="swiper-button-next" style="left: 92rem;"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p>Genre</p>
+        <div class="swiper-container swap">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="Genre/Action.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Adventure.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Animation.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Comedy.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/crime.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Rom-Com.png" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+              <img src="Genre/Drama.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Fantsy.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Sci-Fi.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Horror.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Mystery.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="Genre/Thriller.png" alt="">
+            </div>
+          </div>
+          <div class="arrow">
+              <div class="swiper-button-next" style="left: 92rem;"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Specialties</a></li>
+              <li><a href="#">Contact Us</a></li>
+      </ul>
+          <div class="footer-copyright">
+              <p>Copyright @ 2022 All Rights Reserved.</p>
+          </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./resources/scripts/script.js"></script>
+</body>
+</html>

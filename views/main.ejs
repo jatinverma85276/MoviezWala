@@ -1,0 +1,142 @@
+<%-include('./partials/header') %>
+    <%- include('./partials/video') %>
+    <section class="main">
+      <div class="container">
+        <div class="headingArrow">
+          <p>Updated Movies</p>
+          <div id="container">
+            <a class="button learn-more" href="/browse/newRelease">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Explore All</span>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-container swap">
+          <div class="swiper-wrapper">
+            <% for(var i=0;i<updatedMovies.length;i++){ %>
+            <div class="swiper-slide imgMovie">
+              <a href="/movie/<%=updatedMovies[i].slug%>"><img src="<%= updatedMovies[i].moviePoster %>" alt=""></a>
+              <div class="movieSomeDetail">
+                <h3><%=updatedMovies[i].title%></h3>
+                <h5>Duration : <%=updatedMovies[i].movieDuration%></h5>
+              </div>
+            </div>
+            <% } %>
+          </div>
+          <div class="arrow">
+              <div class="swiper-button-next" style="left: 92rem;"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="headingArrow">
+          <p>Recommended By MoviezWala</p>
+          <div id="container">
+            <a class="button learn-more" href="/browse/recommecedByMoviezwala">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Explore All</span>
+            </a>
+          </div>
+        </div>
+          
+        <div class="swiper-container swap">
+          <div class="swiper-wrapper">
+            <% for(var i=0;i<recommByMoviezwala.length;i++){ %>
+              <div class="swiper-slide imgMovie">
+                <a href="/movie/<%=recommByMoviezwala[i].slug%>"><img src="<%= recommByMoviezwala[i].moviePoster %>" alt=""></a>
+                <div class="movieSomeDetail">
+                  <h3><%=recommByMoviezwala[i].title%></h3>
+                  <h5>Duration : <%=recommByMoviezwala[i].movieDuration%></h5>
+                </div>
+              </div>
+              <% } %>
+          </div>
+          <div class="arrow">
+              <div class="swiper-button-next swapNext" style="left: 92rem;"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="headingArrow">
+          <p>New Release</p>
+          <div id="container">
+            <a class="button learn-more" href="/browse/newRelease">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Explore All</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="swiper-container swap">
+          <div class="swiper-wrapper">
+            <% for(var i=0;i<newRelease.length;i++){ %>
+              <div class="swiper-slide imgMovie">
+                <a href="/movie/<%=newRelease[i].slug%>"><img src="<%= newRelease[i].moviePoster %>" alt=""></a>
+                <div class="movieSomeDetail">
+                  <h3><%=newRelease[i].title%></h3>
+                  <h5>Duration : <%=newRelease[i].movieDuration%></h5>
+                </div>
+              </div>
+              <% } %>
+          </div>
+          <div class="arrow">
+              <div class="swiper-button-next" style="left: 92rem;"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p>Genre</p>
+        <div class="swiper-container swap">
+          <div class="swiper-wrapper genreImg">
+            <div class="swiper-slide">
+              <a href="/genre/action"><img src="Genre/Action.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/adventure"><img src="Genre/Adventure.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/animation"><img src="Genre/Animation.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/comedy"><img src="Genre/Comedy.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/crime"><img src="Genre/crime.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/romance"><img src="Genre/Rom-Com.png" alt=""></a>
+            </div>
+            
+            <div class="swiper-slide">
+              <a href="/genre/drama"><img src="Genre/Drama.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/fantasy"><img src="Genre/Fantsy.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/sci-fi"><img src="Genre/Sci-Fi.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/horror"><img src="Genre/Horror.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/mystery"><img src="Genre/Mystery.png" alt=""></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/genre/thriller"><img src="Genre/Thriller.png" alt=""></a>
+            </div>
+          </div>
+          <div class="genreArrow">
+              <div class="swiper-button-next" style="left: 92rem;"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+<%- include('./partials/footer') %>        
