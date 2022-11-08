@@ -1,15 +1,18 @@
 const Moviezwala = require("../models/movieModel");
+const MoviezwalaVideo = require("../models/videoModel");
+const ObjectId = require('mongodb').ObjectId;
 
 exports.getOverview = async (req, res) => {
     const updatedMovies = await Moviezwala.find({"updatedMovie": 1});
     const recommByMoviezwala = await Moviezwala.find({"recommecedByMoviezwala": 1});
     const newRelease = await Moviezwala.find({"newRelease": 1});
-    // console.log(updatedMovies)
-
+    const videos = await MoviezwalaVideo.find()
+  
     res.status(200).render("main",{
       updatedMovies: updatedMovies,
       recommByMoviezwala: recommByMoviezwala,
-      newRelease : newRelease
+      newRelease : newRelease,
+      videos : videos
     });
   };
 

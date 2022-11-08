@@ -1,5 +1,6 @@
 const Moviezwala = require("../models/movieModel");
-const axios = require('axios')
+const axios = require('axios');
+const MoviezwalaVideo = require("../models/videoModel");
 
 exports.addMovie = async (req, res)=>{
     async function detail(){
@@ -50,3 +51,14 @@ exports.allMovie = async (req,res,next)=>{
     })
 }
 
+exports.addVideo = async (req,res) =>{
+    console.log("jhvbjhfd")
+    console.log("vieo",req.body.video)
+    const video = await MoviezwalaVideo.updateOne({
+        name : "updateVideo"
+    },{$set:{video:req.body.video}})
+    res.status(200).json({
+        status: 'success',
+        data : video
+    })
+}
