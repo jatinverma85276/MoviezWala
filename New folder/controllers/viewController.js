@@ -48,21 +48,9 @@ exports.browseMovie = async (req, res)=>{
 
 exports.search = async (req, res) =>{
   const {search} = req.query;
-  if(search.length === 0){
-    res.redirect('/');
-  }else{
-    const searchMovie = await Moviezwala.find({"keywords": search});
-    if(searchMovie.length === 0){
-      res.redirect("/notFound")
-    }else{
-      res.status(200).render("otherPage",{
-        movies: searchMovie
-      })
-    } 
-  }
-}
+  const searchMovie = await Moviezwala.find({"keywords": search});
 
-
-exports.errPage = (req, res) =>{
-  res.status(200).render("errPage")
+  res.status(200).render("otherPage",{
+    movies: searchMovie
+  })
 }
