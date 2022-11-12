@@ -50,6 +50,12 @@
     transition-delay: 300ms;
     box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
   }
+
+  @media screen and (max-width: 388px) {
+    .swiper-container {
+      overflow: auto;
+    }
+  }
   
   @media screen and (max-width: 599px) {
     .swiper-slide img {
@@ -420,4 +426,16 @@ color : #2f3640;
   width: 150px;
   padding: 0 6px;
 }
+}
+
+
+/************************ErrPages****************************/
+.errPage {
+  margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    padding: 10px;
+    position: relative;
+    top: 66px;
+    text-align: center;
 }
